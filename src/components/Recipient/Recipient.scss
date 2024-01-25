@@ -1,0 +1,33 @@
+.recipient {
+  margin-inline: 1rem;
+  padding-inline: 1rem;
+  background: #fff;
+  border: 0.5px solid #e8ebeb;
+  border-radius: 5px;
+  margin-top: -2.9063rem;
+  padding-bottom: 1rem;
+
+  &__question {
+    color: #303333;
+    font-family: "IBM Plex Sans";
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  &__button-container {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__button {
+    flex: 1;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 3px;
+    background: #00ccbc;
+    border: none;
+    padding-block: 0.4rem;
+  }
+}

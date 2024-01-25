@@ -8,10 +8,10 @@
   background-image: url("../../assets/header-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 1rem;
   min-height: 17.25rem;
   background-position: bottom;
   color: #0e5454;
+  z-index: -1;
 
   &__button {
     display: flex;
