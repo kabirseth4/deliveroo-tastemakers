@@ -3,10 +3,13 @@ import locationIcon from "../../assets/icons/location.png";
 import arrow from "../../assets/icons/ep_arrow-up-bold.png";
 import clock from "../../assets/icons/Screenshot 2024-01-26 at 12.01.43.png";
 
-const ExistingRecipient = ({setRecipientType}) => {
+const ExistingRecipient = ({setRecipientType,setRecipient, setShowDraw}) => {
 
   const handleOnClick = () => {
+
+    setRecipient("Marie Antoinette")
    setRecipientType("Existing")
+   setShowDraw(false)
   }
   return (
     <section className="existing-recipient">

@@ -12,6 +12,7 @@ import Featured from "./components/Featured/Featured";
 function App() {
   const [recipient, setRecipient] = useState(null);
   const [recipientType, setRecipientType] = useState(null);
+  const [showDraw, setShowDraw] = useState(false);
 
   return (
     <BrowserRouter>
@@ -26,11 +27,16 @@ function App() {
                 setRecipient={setRecipient}
                 recipientType={recipientType}
                 setRecipientType={setRecipientType}
+                setShowDraw={setShowDraw}
+                
+
               />
               <Search />
               <GiftOptions />
-              <ExistingRecipient setRecipientType={setRecipientType} />
               <Featured />
+              {showDraw && (
+                <ExistingRecipient setRecipientType={setRecipientType} setRecipient={setRecipient} setShowDraw={setShowDraw}/>
+              )}
             </div>
           }
         />

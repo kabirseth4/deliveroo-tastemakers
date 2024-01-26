@@ -7,6 +7,7 @@ const Recipient = ({
   setRecipient,
   recipientType,
   setRecipientType,
+  setShowDraw,
 }) => {
   const navigate = useNavigate();
 
@@ -21,8 +22,7 @@ const Recipient = ({
             recipientType === "Existing" ? " recipient__button--active" : ""
           }`}
           onClick={() => {
-            setRecipient("Marie Antoinette");
-            setRecipientType("Existing");
+            setShowDraw(true)
           }}
         >
           Existing Recipient
