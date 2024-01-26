@@ -28,14 +28,16 @@ function App() {
                 recipientType={recipientType}
                 setRecipientType={setRecipientType}
                 setShowDraw={setShowDraw}
-                
-
               />
               <Search />
               <GiftOptions />
               <Featured />
               {showDraw && (
-                <ExistingRecipient setRecipientType={setRecipientType} setRecipient={setRecipient} setShowDraw={setShowDraw}/>
+                <ExistingRecipient
+                  setRecipientType={setRecipientType}
+                  setRecipient={setRecipient}
+                  setShowDraw={setShowDraw}
+                />
               )}
             </div>
           }
