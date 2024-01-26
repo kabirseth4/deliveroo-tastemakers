@@ -1,0 +1,8 @@
+.featured {
+    width: 100%;
+    object-fit: cover; 
+    background-size: contain;
+    &__image {
+    width: 100%; 
+    }
+}

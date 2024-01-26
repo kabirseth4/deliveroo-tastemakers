@@ -6,6 +6,7 @@ import Recipient from "./components/Recipient/Recipient";
 import Search from "./components/Search/Search";
 import GiftOptions from "./components/GiftOptions/GiftOptions";
 import NewRecipient from "./pages/NewRecipient/NewRecipient";
+import Featured from "./components/Featured/Featured";
 
 function App() {
   const [recipient, setRecipient] = useState(null);
@@ -27,6 +28,7 @@ function App() {
               />
               <Search />
               <GiftOptions />
+              <Featured />
             </div>
           }
         />
