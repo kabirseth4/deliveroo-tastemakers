@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Recipient />
       <Search />
-      {/* <ExistingRecipient /> */}
+      <ExistingRecipient />
     </div>
   );
 }
