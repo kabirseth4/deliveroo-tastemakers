@@ -1,0 +1,79 @@
+.new-recipient-form {
+  background-color: #fafafa;
+  padding-top: 1.87rem;
+
+  &__title {
+    padding-inline: 0.88rem;
+    margin-block: 0 1.87rem;
+    color: #2e3333;
+    font-family: "IBM Plex Sans";
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-bottom: 3.25rem;
+
+    &--compact {
+      gap: 0;
+    }
+  }
+
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.62rem;
+  }
+
+  &__label {
+    padding-inline: 0.88rem;
+    color: #2d3331;
+    font-family: "IBM Plex Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__input {
+    color: #2e3333;
+    padding: 0.88rem;
+    font-family: "IBM Plex Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    background: #fff;
+
+    &--no-border {
+      border: none;
+    }
+
+    &::placeholder {
+      color: #a8acab;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input-subtext {
+    margin: 0;
+    padding-inline: 0.88rem;
+    color: #a8acab;
+    font-family: "IBM Plex Sans";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
