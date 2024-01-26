@@ -7,6 +7,7 @@ import Search from "./components/Search/Search";
 import ExistingRecipient from "./components/ExistingRecipient/ExistingRecipient";
 import GiftOptions from "./components/GiftOptions/GiftOptions";
 import NewRecipient from "./pages/NewRecipient/NewRecipient";
+import Featured from "./components/Featured/Featured";
 
 function App() {
   const [recipient, setRecipient] = useState(null);
@@ -29,6 +30,7 @@ function App() {
               <Search />
               <GiftOptions />
               <ExistingRecipient setRecipientType={setRecipientType} />
+              <Featured />
             </div>
           }
         />
