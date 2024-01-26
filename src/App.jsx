@@ -1,8 +1,8 @@
 import "./App.scss";
-import ExistingRecipient from "./components/ExistingRecipient/ExistingRecipient";
 import Header from "./components/Header/Header";
 import Recipient from "./components/Recipient/Recipient";
 import Search from "./components/Search/Search";
+import ExistingRecipient from "./components/ExistingRecipient/ExistingRecipient";
 
 function App() {
   return (
