@@ -1,0 +1,21 @@
+.new-recipient-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 4.375rem;
+
+  &__link {
+    font-size: 0;
+    position: absolute;
+    left: 1rem;
+  }
+
+  &__title {
+    color: #2d3331;
+    font-family: "IBM Plex Sans";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

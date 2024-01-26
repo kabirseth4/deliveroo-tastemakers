@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./Recipient.scss";
+import { useNavigate } from "react-router-dom";
 
 const Recipient = () => {
+  const navigate = useNavigate();
   const [recipientType, setRecipientType] = useState(null);
 
   return (
@@ -25,7 +27,7 @@ const Recipient = () => {
             recipientType === "New" ? " recipient__button--active" : ""
           }`}
           onClick={() => {
-            setRecipientType("New");
+            navigate("/new-recipient");
           }}
         >
           New Recipient
