@@ -1,9 +1,15 @@
 import { useState } from "react";
 import "./Recipient.scss";
+import { useNavigate } from "react-router-dom";
 
-const Recipient = () => {
-  const [recipientType, setRecipientType] = useState(null);
-  
+const Recipient = ({
+  recipient,
+  setRecipient,
+  recipientType,
+  setRecipientType,
+}) => {
+  const navigate = useNavigate();
+
   return (
     <div className="recipient">
       {!recipientType && (
@@ -15,6 +21,7 @@ const Recipient = () => {
             recipientType === "Existing" ? " recipient__button--active" : ""
           }`}
           onClick={() => {
+            setRecipient("Marie Antoinette");
             setRecipientType("Existing");
           }}
         >
@@ -25,7 +32,7 @@ const Recipient = () => {
             recipientType === "New" ? " recipient__button--active" : ""
           }`}
           onClick={() => {
-            setRecipientType("New");
+            navigate("/new-recipient");
           }}
         >
           New Recipient
@@ -43,7 +50,7 @@ const Recipient = () => {
       </div>
       {(recipientType === "Existing" || recipientType === "New") && (
         <p className="recipient__text">
-          Choose a gift for <strong>Marie Antoinette</strong>
+          Choose a gift for <strong>{recipient}</strong>
         </p>
       )}
       {recipientType === "Myself" && (
