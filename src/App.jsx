@@ -4,13 +4,19 @@ import Recipient from "./components/Recipient/Recipient";
 import Search from "./components/Search/Search";
 import ExistingRecipient from "./components/ExistingRecipient/ExistingRecipient";
 
+
+import { useState } from "react";
+
+
 function App() {
+  const [recipientType, setRecipientType] = useState(null); 
+  console.log(recipientType)
   return (
     <div className="app">
       <Header />
-      <Recipient />
+      <Recipient recipientType={recipientType}  />
       <Search />
-      <ExistingRecipient />
+      <ExistingRecipient  setRecipientType={setRecipientType} />
     </div>
   );
 }

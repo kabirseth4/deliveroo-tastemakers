@@ -3,7 +3,7 @@ import "./Recipient.scss";
 
 const Recipient = () => {
   const [recipientType, setRecipientType] = useState(null);
-
+  
   return (
     <div className="recipient">
       {!recipientType && (
