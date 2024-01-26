@@ -1,6 +1,6 @@
 .new-recipient-form {
   background-color: #fafafa;
-  padding-top: 1.87rem;
+  padding-block: 1.87rem;
 
   &__title {
     padding-inline: 0.88rem;
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    padding-bottom: 3.25rem;
+    padding-bottom: 1.87rem;
 
     &--compact {
       gap: 0;
@@ -57,6 +57,10 @@
       border: none;
     }
 
+    &--no-bottom-border {
+      border-bottom: none;
+    }
+
     &::placeholder {
       color: #a8acab;
     }
@@ -75,5 +79,27 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  &__button-container {
+    padding-inline: 0.88rem;
+  }
+
+  &__button {
+    width: 100%;
+    background-color: #00ccbc;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 3px;
+    border: 2px solid #00ccbc;
+    padding-block: 0.4rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      color: #00ccbc;
+    }
   }
 }
