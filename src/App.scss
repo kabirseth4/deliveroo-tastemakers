@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: stratos, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #2e3333;
+}
+
+#root {
+  max-width: 390px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.app {
+  height: 100vh;
+  position: relative;
+}
